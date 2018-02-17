@@ -1,0 +1,28 @@
+{
+  "name": "express-studies",
+  "version": "1.0.0",
+  "description": "my studies with express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shikow/express-studies.git"
+  },
+  "keywords": [
+    "study",
+    "express",
+    "poc"
+  ],
+  "author": "Chico",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shikow/express-studies/issues"
+  },
+  "homepage": "https://github.com/shikow/express-studies#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^5.0.6"
+  }
+}

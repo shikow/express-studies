@@ -1,12 +1,13 @@
+import bluebird from 'bluebird';
 import express from 'express';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import routes from './src/routes/crmRoutes';
 const app = express();
-const PORT = 3000;
+const PORT = 3001;
 
 //mongoose connection
-mongoose.Promise = global.Promise; // maybe use bluebird?
+mongoose.Promise = bluebird.Promise; // maybe use bluebird?
 mongoose.connect('mongodb://localhost:32769/CRMdb',{
     
 }); //12factorapp doesnt approve :P

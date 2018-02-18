@@ -57,3 +57,5 @@ typings/
 # dotenv environment variables file
 .env
 
+#babel dist for debug purpose!
+dist

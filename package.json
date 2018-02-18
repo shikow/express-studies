@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./index.js --exec babel-node -e js"
+    "start": "nodemon ./index.js --exec babel-node -e js",
+    "build": "babel src -d dist --source-maps",
+    "debug": "babel-node debug index.js"
   },
   "repository": {
     "type": "git",

@@ -24,3 +24,9 @@ export const getContactById = (req, resp) => {
     Contact.findById(req.params.contactId, (err, contact) => response(err, contact, resp));
 
 };
+
+export const updateContact = (req, resp) =>{
+    Contact.findByIdAndUpdate({_id: req.params.contactId}, req.body, { upsert: false, new: true},
+        (err, contact) => response(err, contact, resp));
+
+};

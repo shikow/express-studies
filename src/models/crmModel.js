@@ -22,7 +22,7 @@ export const ContactSchema = new Schema({
     },
     created_date: {
         type: Date,
-        default: Date.now.UTC
+        default: Date.now
     }
 
 });

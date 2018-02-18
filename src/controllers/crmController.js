@@ -25,8 +25,12 @@ export const getContactById = (req, resp) => {
 
 };
 
-export const updateContact = (req, resp) =>{
+export const updateContact = (req, resp) => {
     Contact.findByIdAndUpdate({_id: req.params.contactId}, req.body, { upsert: false, new: true},
         (err, contact) => response(err, contact, resp));
 
+};
+
+export const deleteContact = (req, resp) => {
+    Contact.deleteOne({_id: req.params.contactId}, (err) => response(err, 'OK', resp));
 };
